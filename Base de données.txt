@@ -1,0 +1,41 @@
+-- Création de la table des véhicules
+CREATE TABLE vehicules (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    plaque VARCHAR(20) NOT NULL,
+    proprietaire VARCHAR(100) NOT NULL,
+    telephone VARCHAR(15) NOT NULL
+);
+
+-- Création de la table des places de stationnement
+CREATE TABLE places (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    numero INT NOT NULL,
+    statut ENUM('libre', 'occupée') DEFAULT 'libre'
+);
+
+-- Création de la table des stationnements
+CREATE TABLE stationnements (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    vehicule_id INT,
+    place_id INT,
+    date_entree DATETIME NOT NULL,
+    date_sortie DATETIME,
+    FOREIGN KEY (vehicule_id) REFERENCES vehicules(ID),
+    FOREIGN KEY (place_id) REFERENCES places(ID)
+);                                                                                                                                                                 CREATE TABLE users (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('admin', 'user') NOT NULL DEFAULT 'user'
+);
+ -- Création de la table des réservations
+CREATE TABLE reservations (
+    ID INT AUTO_INCREMENT PRIMARY KEY,          -- Identifiant unique de la réservation
+    user_id INT NOT NULL,                       -- Référence à l'utilisateur
+    place_id INT NOT NULL,                      -- Référence à la place de stationnement
+    date_debut DATETIME NOT NULL,               -- Date et heure de début de la réservation
+    date_fin DATETIME NOT NULL,                 -- Date et heure de fin de la réservation
+    statut ENUM('confirmée', 'annulée', 'en attente') DEFAULT 'en attente', -- Statut de la réservation
+    FOREIGN KEY (user_id) REFERENCES users(ID), -- Relation avec la table users
+    FOREIGN KEY (place_id) REFERENCES places(ID) -- Relation avec la table places
+);
