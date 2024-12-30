@@ -1,0 +1,339 @@
+/* Styles généraux */
+.body_index {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+   
+}
+
+/* Section principale */
+.main-banner_index {
+    background: url('images/index.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.main-banner_index h1, 
+.main-banner_index h2 {
+    margin: 0;
+}
+
+.search-form_index {
+    margin-top: 20px;
+}
+
+.search-form_index input {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form_index button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form_index button:hover {
+    background-color: #e68a00;
+}
+
+/* Section avantages */
+.advantages_index {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px 30px;
+    background-color: rgba(255, 255, 255, 0.219); /* Fond légèrement opaque */
+    border: 2px solid #05122e; /* Bordure bleue */
+
+}
+.advantage-box_index {
+    text-align: center;
+    max-width: 300px;
+    background-color: #05122e; /* Couleur de fond bleu */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 30px; /* Espace intérieur */
+    border: 2px solid #3e5a8b; /* Bordure d'une couleur légèrement plus foncée */
+    transition: all 0.3s ease;
+}
+
+.advantage-box_index h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white; /* Couleur du texte */
+}
+
+.advantage-box_index p {
+    font-size: 15px;
+    color: white; /* Couleur du texte */
+}
+.advantages_index :hover {
+    transform: scale(1.02);}
+
+
+/* Style général pour la page de connexion */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Conteneur principal du formulaire */
+.main-content_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/login.jpg') no-repeat center center/cover;
+}
+
+/* Formulaire de connexion */
+.connexion_login {
+    background-color: rgba(255, 255, 255, 0.212); /* Transparent avec un fond légèrement opaque */
+    border: 3px solid #05122e; /* Bordure bleue */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* S'adapte à la largeur de l'écran */
+    max-width: 500px; /* Augmentez cette valeur si le cadre semble petit, ex : 600px */
+    max-height: 600px; /* Vous pouvez définir une hauteur maximale */
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+}
+
+
+/* Titre du formulaire */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles pour les champs de formulaire */
+.username-label_login,
+.password-label_login {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.username-label_login i,
+.password-label_login i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+.username-input_login,
+.password-input_login {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+/* Bouton de soumission */
+.submit-btn_login {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bouton au survol */
+.submit-btn_login:hover {
+    background-color: #0056b3;
+}
+
+.register-link_login {
+    margin-top: 15px; /* Ajoute un espace entre le bouton et le lien */
+    font-size: 14px;  /* Ajuste la taille de la police */
+    text-align: center; /* Centre le texte */
+    color: #ffffff;       /* Donne une couleur douce au texte */
+}
+
+.register-link_login a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold; /* Rendre le lien visible */
+}
+
+.register-link_login a:hover {
+    text-decoration: underline;
+    color: #61a0e2; /* Couleur au survol */
+}
+
+
+
+/* Affichage de l'erreur */
+.error_login {
+    color: #ff0000;
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Message d'erreur */
+.error_login {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Styles généraux */
+.ajouter-vehiculee {
+    background: url('images/index.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    
+}
+
+/* Section principale */
+.main-banner-ajouter-vehicule {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-banner-ajouter-vehicule h1, 
+.main-banner-ajouter-vehicule h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Conteneur du formulaire */
+.form-ajouter-vehicule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Formulaire d'ajout de véhicule */
+.form-ajouter-vehicule {
+    background-color: rgba(255, 255, 255, 0.219); /* Fond légèrement opaque */
+    border: 2px solid #05122e; /* Bordure bleue */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titre du formulaire */
+.form-ajouter-vehicule h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #10054d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styles pour les champs de formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Bouton de soumission */
+.submit-btn-ajouter-vehicule {
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Bouton au survol */
+.submit-btn-ajouter-vehicule:hover {
+    background-color: #0056b3;
+}
+
+/* Affichage des messages */
+.message-ajouter-vehicule {
+    color: #ff0000;
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Contenu de la page */
+.main-content-ajouter-vehicule {
+    margin: 20px;
+}
+
+/* Styles pour le lien retour */
+.return-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.return-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.return-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Besoin d'aide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* Barre de contact */
+        .header {
+            background: #052038; /* Couleur du header */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .btn-reservation {
+            background-color: #052038;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Menu principal */
+        .menu {
+            background-color: #052038; /* Couleur du menu principal */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu .logo h2 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin: 0 15px;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #003366;
+            text-align: center;
+        }
+        .faq-section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .faq-section h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .faq-item p {
+            margin: 5px 0;
+            text-align: center;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #052038; /* Couleur du footer */
+            color: #fff;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 20px;
+            text-align: center;
+        }
+
+        .footer-section h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #052038;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #003580;
+            font-size: 14px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .page-title {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px auto;
+        }
+        .page-title--heading {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .page-title--subheading {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <h1>AQUITAINE PARK</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <!-- Menu principal -->
+            <div class="login-button">
+                <button onclick="window.location.href='login.html'" class="btn-login">Se connecter</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Section ajoutée -->
+    <div id="block-effia-theme-page-title" class="block-effia-theme-page-title block block-core block-page-title-block">
+        <div class="page-title page-title-generic background_handler">
+            <div class="row align-center">
+                <div class="page-title--title small-12 column">
+                    <h1 class="page-title--heading small" id="menu-sticky-anchor">
+                        <span>Questions les plus fréquentes</span>
+                    </h1>
+                    <p class="page-title--subheading">
+                        Trouvez les réponses à vos questions au sujet de la réservation d'une place ou la souscription d'un abonnement
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de la section ajoutée -->
+
+    <div class="container">
+        <section class="faq-section">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-item">
+                <h3>Comment créer un compte ?</h3>
+                <p>Pour créer un compte, cliquez sur le bouton "Inscription" en haut à droite de la page d'accueil et suivez les étapes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Comment récupérer mon mot de passe ?</h3>
+                <p>Utilisez la fonction "Mot de passe oublié" sur la page de connexion pour réinitialiser votre mot de passe.</p>
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute autre question, vous pouvez nous contacter :</p>
+            <ul>
+                <li>Par téléphone : <a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>Par email : <a href="mailto:support@effia.com">support@effia.com</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h4>Contact</h4>
+                <p>📞 05 57 65 95 95</p>
+                <p>✉️ <a href="mailto:contact@aquitaine-park.com">contact@aquitaine-park.com</a></p>
+            </div>
+
+            <div class="footer-section links">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="reservation.php">Réserver</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Suivez-nous</h4>
+                <a href="#" target="_blank">🌐 Facebook</a> |
+                <a href="#" target="_blank">📸 Instagram</a> |
+                <a href="#" target="_blank">🐦 Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Aquitaine Park | Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>
+
